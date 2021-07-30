@@ -19,8 +19,9 @@
   "scripts": {
     "poststart": "cd app/client && npm run start",
     "start": "cd apps/server && npm run start",
-    "build": "cd apps/server && npm run build",
-    "prebuild": "cd apps/client && npm install && cd ../../apps/server && npm install",
+    "postbuild": "cd apps/server && npm run build",
+    "build": "cd apps/server && npm run install",
+    "prebuild": "cd apps/client && npm install",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
