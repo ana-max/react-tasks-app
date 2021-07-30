@@ -20,7 +20,7 @@
     "poststart": "cd app/client && npm run start",
     "start": "cd apps/server && npm run start",
     "postbuild": "cd apps/server && npm run build",
-    "build": "cd apps/server && npm run install",
+    "build": "cd apps/server && npm install",
     "prebuild": "cd apps/client && npm install",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
