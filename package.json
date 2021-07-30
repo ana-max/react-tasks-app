@@ -17,8 +17,11 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "cd apps/server/dist && npm run start && cd ../../apps/client && npm run start",
+    "poststart": "cd app/client && npm run start",
+    "start": "cd apps/server && npm run start",
     "build": "cd apps/server && npm run build",
+    "prebuild": "cd apps/client && npm install",
+    "preprebuild": "cd apps/server && npm install",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
