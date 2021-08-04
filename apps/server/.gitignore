@@ -2,8 +2,8 @@
 
 # dependencies
 /node_modules
+/dist
 /.pnp
-/apps/server/dist
 .pnp.js
 
 # testing
